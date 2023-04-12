@@ -1,0 +1,344 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+#navbar-pinterest{
+    font-size: 18px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
+    grid-template-rows: 40px;
+    padding: 15px 100% 15px 15px ;
+    position: fixed;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px;
+}
+
+
+#pinterest-icon img{
+    padding: 10px;
+    height: 60px;
+    width: 60px;
+    
+}
+
+#pinterest-icon:hover{
+    background-color: #e5e5e5;
+    border-radius: 100%;
+
+}
+
+.inicio{
+    padding: 10px;
+    background-color: black;
+    border-radius: 50px;
+}
+
+.inicio a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.hoy{
+    padding: 15px ;
+}
+
+.hoy a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.crear{
+    padding: 15px 20px 15px 10px;
+    background: #fff url(/Pinterest/imagenes/flecha-abajo.png) right;
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    background-position-x: 110%;
+    background-position-y: 60%;
+}
+
+.crear a{
+    text-decoration: none;
+    color: black;
+}
+
+.sub-menu{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 8%;
+    border: 1px solid #e5e5e5;
+    padding: 20px;
+    top: 50px;
+    left: 160px;
+    
+}
+
+.sub-menu a{
+    text-decoration: none;
+    color: black;
+}
+
+.crear:hover .sub-menu{
+    display: grid;
+    align-items: center;
+}
+
+#crear-1{
+    padding: 10px 10px;
+}
+
+#crear-1:hover{
+    background-color: #e5e5e5;
+    border-radius: 10%;
+}
+
+#crear-2{
+    padding: 10px 10px;
+}
+
+#crear-2:hover{
+    background-color: #e5e5e5;
+    border-radius: 10%;
+
+}
+
+input.finder{
+    padding: 15px 820px 10px 50px;
+    outline-color: rgb(78, 181, 225);
+    font-size: 15px;
+    border-radius: 50px;
+    color: rgb(119, 118, 118);
+    border: 3px solid #e5e5e5;
+    background: #e5e5e5 url(/Pinterest/imagenes/search-icon.png) left ;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position-x: 2%;
+}
+
+#notifications img{
+    width: 40px;
+    height: 40px;
+    padding: 10px 10px;
+}
+
+#notifications:hover{
+    cursor: pointer;
+}
+
+#hov-notif{
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 1280px;
+    color: #fff;
+    background-color: black;
+    border-radius: 100%;
+    margin: auto;
+    border: 2px solid #e5e5e5;
+    font-size: small;
+    padding: 10px;
+}
+
+#notifications:hover #hov-notif{
+    display: block;
+}
+
+#message img{
+    width: 50px;
+    height: 50px;
+    padding: 10px 10px;
+}
+
+#message:hover{
+    cursor: pointer;
+}
+
+#hov-mes{
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 1340px;
+    color: #fff;
+    background-color: black;
+    border-radius: 100%;
+    margin: auto;
+    border: 2px solid #e5e5e5;
+    font-size: small;
+    padding: 10px;
+}
+
+#message:hover #hov-mes{
+    display: block;
+}
+
+#profile-img img{
+    background-color: #e5e5e5;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 10px 10px;
+}
+
+#profile-img:hover{
+    cursor: pointer;
+}
+
+#hov-profile{
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 1390px;
+    color: #fff;
+    background-color: black;
+    border-radius: 100%;
+    margin: auto;
+    border: 2px solid #e5e5e5;
+    font-size: small;
+    padding: 10px;
+}
+
+#profile-img:hover #hov-profile{
+    display: block;
+}
+
+
+#menu img{
+    width: 40px;
+    height: 40px;
+    padding: 10px 10px;
+}
+
+
+#menu img:hover{
+    background-color: #e5e5e5;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+#hov-arrow{
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 1340px;
+    color: #fff;
+    background-color: black;
+    border-radius: 100%;
+    margin: auto;
+    border: 2px solid #e5e5e5;
+    font-size: small;
+    padding: 10px;
+}
+
+#menu:hover #hov-arrow{
+    display: block;
+}
+
+#content{
+    padding: 70px 20px 20px 20px;
+    columns: 5 100px;
+}
+
+#content img{
+    
+    margin-block: 10px;
+    min-height: 50px;
+    max-height: 1000px;
+    max-width: 100%;
+    border-radius: 10%;
+}
+
+
+.card-image img{
+    border: 2px solid #e5e5e5;
+}
+
+.card-image:hover{
+    cursor:zoom-in;
+}
+
+.guardar{
+    display: none;
+    position:relative;
+    top: -80px;
+    left: 220px;
+    border-radius: 100%;
+}
+
+.dots{
+    display: none;
+    position:relative;
+    top: -80px;
+    left: -20px;
+    border-radius: 100%;
+}
+
+.texto{
+    display: none;
+    position:relative;
+    top: -110px;
+    left: -5px;
+    color: black;
+    background-color: red;
+    opacity: .3;
+    border-radius: 20%;
+    font-size: 15px;
+    padding: 10px 30px 10px 30px;
+
+}
+
+.texto:hover{
+    opacity: .7;
+    cursor: pointer;
+}
+
+.guardar img{
+    background-color: #e5e5e5;
+    opacity: .3;
+    width: 40px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+.dots img{
+    background-color: #e5e5e5;
+    opacity: .3;
+    width: 40px;
+    height: 10px;
+    border-radius: 100%;
+
+}
+
+.guardar:hover{
+    cursor: pointer;
+}
+
+.dots:hover{
+    cursor: pointer;
+}
+
+.guardar img:hover{
+    opacity: .7;
+}
+
+.dots img:hover{
+    opacity: .7;
+}
+
+.card-image:hover .guardar{
+    display: inline-block;
+}
+
+.card-image:hover .dots{
+    display: inline-block;
+}
+
+.card-image:hover .texto{
+    display: inline-block;
+}
